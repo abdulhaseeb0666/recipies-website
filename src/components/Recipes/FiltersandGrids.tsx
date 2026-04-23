@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState} from "react"
 import RecipeGrid from "./RecipeGrid"
 
 type Recipe = 
@@ -21,31 +21,13 @@ type Recipe =
     "mealType": string[]
 }
 
-const FiltersandGrids = () => {
+const FiltersandGrids = ({recipes} : {recipes: Recipe[]}) => {
+    
+    const recipies = recipes;
     const [search, setSearch] = useState("")
     const [category, setCategory] = useState("all")
 
-    const [recipes, setRecipes] = useState<Recipe[]>([])
-    
-
-    // ✅ Fetch function (separate, correct)
-    const fetchRecipes = async (): Promise<Recipe[]> => {
-        const res = await fetch("https://dummyjson.com/recipes")
-        const data = await res.json()
-        return data.recipes
-    }
-
-    // ✅ Load data into state
-    useEffect(() => {
-        const loadRecipes = async () => {
-        const data = await fetchRecipes()
-        setRecipes(data)
-        }
-
-        loadRecipes()
-    }, [])
-
-    const filteredRecipes = recipes.filter((recipe) => {
+    const filteredRecipes = recipies.filter((recipe) => {
         const matchesSearch = recipe.name
         .toLowerCase()
         .includes(search.toLowerCase())

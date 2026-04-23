@@ -45,7 +45,7 @@ const AllRecipes = () => {
     <div className="min-h-screen bg-linear-to-b from-orange-50 to-white">
       <Navbar />
       <Header />
-      <FiltersandGrids />
+      <FiltersandGrids recipes={recipes} />
       <Footer />
     </div>
   )
