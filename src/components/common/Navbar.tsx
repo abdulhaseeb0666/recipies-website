@@ -21,7 +21,7 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
             <ChefHat className="text-white" size={24} />
           </div>
           <span className={`text-2xl font-bold ${isScrolled ? 'text-gray-900' : 'text-white'}`}>
-            Culinara
+            RecipeNow
           </span>
         </div>
 

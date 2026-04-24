@@ -59,7 +59,7 @@ const AboutPage: React.FC = () => {
           Cooking Should Be Joy, Not a Chore
         </h2>
         <p className="text-lg text-gray-600 leading-relaxed mb-8">
-          Culinara started in a tiny apartment kitchen in 2020. Our founder, tired of boring weeknight dinners and complicated recipes, 
+          RecipeNow started in a tiny apartment kitchen in 2020. Our founder, tired of boring weeknight dinners and complicated recipes, 
           dreamed of a place where home cooks could find inspiration without the intimidation. Today, we are a community of 
           <span className="font-semibold text-gray-900"> 2 million food lovers</span> who believe that a good recipe can change your day — 
           and maybe even your life.
@@ -67,7 +67,7 @@ const AboutPage: React.FC = () => {
         <p className="text-lg text-gray-600 leading-relaxed">
           We do not believe in perfect plating or expensive ingredients. We believe in the magic of a home-cooked meal, 
           shared with people you love. Whether you are making your first omelet or your hundredth sourdough, 
-          Culinara is here to cheer you on.
+          RecipeNow is here to cheer you on.
         </p>
       </section>
 
@@ -156,7 +156,7 @@ const AboutPage: React.FC = () => {
       <section className="py-20 max-w-4xl mx-auto px-6 text-center">
         <Quote className="mx-auto text-orange-200 mb-6" size={48} />
         <blockquote className="text-2xl md:text-3xl font-medium text-gray-900 leading-relaxed mb-8">
-          "Culinara taught me that cooking is not about perfection. It is about showing up, making a mess, 
+          "RecipeNow taught me that cooking is not about perfection. It is about showing up, making a mess, 
           and feeding the people you love. I have never been more confident in the kitchen."
         </blockquote>
         <div className="flex items-center justify-center gap-3">
@@ -235,7 +235,7 @@ const AboutPage: React.FC = () => {
 
       {/* Footer */}
       <footer className="bg-gray-950 text-gray-400 py-8 text-center text-sm">
-        <p> Made with <Heart size={12} className="inline text-red-500 fill-red-500" /> by the Culinara Team. 2026.</p>
+        <p> Made with <Heart size={12} className="inline text-red-500 fill-red-500" /> by the RecipeNow Team. 2026.</p>
       </footer>
 
     </div>
