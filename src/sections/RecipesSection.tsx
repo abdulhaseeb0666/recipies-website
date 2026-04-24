@@ -1,6 +1,6 @@
 import React from 'react';
 import { Search, ChevronRight, ChevronDown } from 'lucide-react';
-import RecipeCard from '../components/RecipeCard';
+import RecipeCard from '../components/common/RecipeCard';
 import type { Recipe } from '../types/recipe';
 
 interface RecipesSectionProps {

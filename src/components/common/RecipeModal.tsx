@@ -1,6 +1,6 @@
 import React from 'react';
 import { X, Timer, Flame, Users, Gauge, Utensils, ChefHat, Star } from 'lucide-react';
-import type { Recipe } from '../types/recipe';
+import type { Recipe } from '../../types/recipe';
 
 interface RecipeModalProps {
   recipe: Recipe | null;

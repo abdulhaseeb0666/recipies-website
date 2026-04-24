@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Heart, Timer, Flame, Users, Star, Loader2 } from 'lucide-react';
-import type { Recipe } from '../types/recipe';
-import { getTotalTime, getDifficultyColor } from '../utils/helpers';
+import type { Recipe } from '../../types/recipe';
+import { getTotalTime, getDifficultyColor } from '../../utils/helpers';
 
 interface RecipeCardProps {
   recipe: Recipe;

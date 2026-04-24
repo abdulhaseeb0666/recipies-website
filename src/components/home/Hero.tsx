@@ -1,6 +1,6 @@
 import React from 'react';
-import { Search, Star, ArrowRight } from 'lucide-react';
-import type { HeroStats } from '../types/recipe';
+import { Star, ArrowRight } from 'lucide-react';
+import type { HeroStats } from '../../types/recipe';
 
 interface HeroProps {
   stats: HeroStats;

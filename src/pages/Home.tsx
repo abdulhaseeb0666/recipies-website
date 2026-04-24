@@ -2,12 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Loader2, AlertCircle, RefreshCw } from 'lucide-react';
 
 // Components
-import Navbar from '../components/Navbar';
-import Hero from '../components/Hero';
-import FeaturedSection from '../components/FeaturedSection';
-import Newsletter from '../components/NewsLetter';
-import Footer from '../components/Footer';
-import RecipeModal from '../components/RecipeModal';
+import Navbar from '../components/common/Navbar';
+import Hero from '../components/home/Hero';
+import FeaturedSection from '../components/home/FeaturedSection';
+import Newsletter from '../components/home/NewsLetter';
+import Footer from '../components/common/Footer';
+import RecipeModal from '../components/common/RecipeModal';
 
 // Sections
 import CategoriesSection from '../sections/CategoriesSection';

@@ -1,5 +1,5 @@
 import React from 'react';
-import type { Category } from '../types/recipe';
+import type { Category } from '../../types/recipe';
 
 interface CategoryCardProps extends Category {
   isActive: boolean;

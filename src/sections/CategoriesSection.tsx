@@ -1,6 +1,6 @@
 import React from 'react';
 import { Utensils, Globe, Leaf, Clock, TrendingUp, Star } from 'lucide-react';
-import CategoryCard from '../components/CategoryCard';
+import CategoryCard from '../components/home/CategoryCard';
 import { getCategories } from '../utils/helpers';
 
 interface CategoriesSectionProps {

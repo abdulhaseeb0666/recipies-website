@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ChefHat, Search, Menu, X } from 'lucide-react';
+import { ChefHat, Menu, X } from 'lucide-react';
 
 interface NavbarProps {
   isScrolled: boolean;
@@ -8,7 +8,7 @@ interface NavbarProps {
 const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const navLinks = ['Recipes', 'Categories', 'Chefs', 'About'];
+  const navLinks = ['Home', 'Categories', 'Chefs', 'About'];
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -29,8 +29,8 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((item) => (
             <a 
-              key={item} 
-              href="#" 
+              key={item}
+              href={`/${item.toLowerCase()}`} 
               className={`font-medium hover:text-orange-500 transition-colors ${
                 isScrolled ? 'text-gray-700' : 'text-white/90'
               }`}

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Flame, Timer, Gauge, Star, Play, Bookmark, Leaf, Globe } from 'lucide-react';
-import type { Recipe } from '../types/recipe';
-import { getTotalTime } from '../utils/helpers';
+import type { Recipe } from '../../types/recipe';
+import { getTotalTime } from '../../utils/helpers';
 
 interface FeaturedSectionProps {
   recipe: Recipe | null;
