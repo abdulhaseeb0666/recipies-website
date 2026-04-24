@@ -1,6 +1,7 @@
 import React from 'react';
-import { Star, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import type { HeroStats } from '../../types/recipe';
+import { Link } from 'react-router-dom';
 
 interface HeroProps {
   stats: HeroStats;
@@ -28,12 +29,6 @@ const Hero: React.FC<HeroProps> = ({ stats }) => {
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-6 py-32 text-center">
-        <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-4 py-1.5 mb-8">
-          <Star size={14} className="text-orange-400 fill-orange-400" />
-          <span className="text-white/90 text-sm font-medium">
-            {stats.total.toLocaleString()}+ recipes from {stats.cuisines} cuisines worldwide
-          </span>
-        </div>
 
         <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
           Cook Like a <span className="text-orange-400">Pro</span>,<br />
@@ -46,9 +41,11 @@ const Hero: React.FC<HeroProps> = ({ stats }) => {
 
         {/* Search CTA */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button className="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 flex items-center justify-center gap-2 shadow-xl shadow-orange-500/25">
-            Explore Recipes <ArrowRight size={20} />
-          </button>
+          <Link to={"/categories"}>
+            <button className="w-full sm:w-auto bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-full font-semibold transition-all transform hover:scale-105 flex items-center justify-center gap-2 shadow-xl shadow-orange-500/25">
+              Explore Recipes <ArrowRight size={20} />
+            </button>
+          </Link>
         </div>
 
         {/* Stats Grid */}

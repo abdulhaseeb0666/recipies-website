@@ -10,11 +10,11 @@ export const HeroSection: React.FC = () => {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-900">
       <div className="absolute inset-0">
         <img 
-          src="https://images.unsplash.com/photo-1556910103-1c02745aae4d?w=1600&auto=format&fit=crop&q=80" 
+          src="https://plus.unsplash.com/premium_photo-1705927287249-b436b77d66c9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fHBpenphJTIwa2l0Y2hlbnxlbnwwfDB8MHx8fDA%3D" 
           alt="Chefs kitchen" 
           className="w-full h-full object-cover opacity-50"
         />
-        <div className="absolute inset-0 bg-linear-to-b from-black/60 via-black/30 to-black/70" />
+        <div className="absolute inset-0 bg-linear-to-b from-black/40 via-transparent to-black/60" />
       </div>
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">

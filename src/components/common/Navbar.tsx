@@ -46,9 +46,11 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
             isScrolled ? 'hover:bg-gray-100 text-gray-700' : 'hover:bg-white/10 text-white'
           }`}>
           </button>
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2.5 rounded-full font-medium transition-all transform hover:scale-105">
-            Get Started
-          </button>
+          <Link to={"/categories"}>
+            <button className="bg-orange-500 hover:bg-orange-600 text-white px-5 py-2.5 rounded-full font-medium transition-all transform hover:scale-105">
+              Get Started
+            </button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
