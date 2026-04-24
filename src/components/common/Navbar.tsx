@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { ChefHat, Menu, X } from 'lucide-react';
-
+import { Link } from 'react-router-dom';
 interface NavbarProps {
   isScrolled: boolean;
 }
@@ -28,15 +28,15 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((item) => (
-            <a 
+            <Link
               key={item}
-              href={`/${item.toLowerCase()}`} 
+              to={`/${item.toLowerCase()}`}
               className={`font-medium hover:text-orange-500 transition-colors ${
                 isScrolled ? 'text-gray-700' : 'text-white/90'
               }`}
             >
               {item}
-            </a>
+            </Link>
           ))}
         </div>
 
