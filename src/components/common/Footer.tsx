@@ -1,5 +1,5 @@
 import React from 'react';
-import { ChefHat, Share2 } from 'lucide-react';
+import { ChefHat} from 'lucide-react';
 
 const Footer: React.FC = () => {
   const footerLinks = {
