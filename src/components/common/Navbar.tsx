@@ -71,13 +71,13 @@ const Navbar: React.FC<NavbarProps> = ({ isScrolled }) => {
         <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t">
           <div className="flex flex-col p-6 gap-4">
             {navLinks.map((item) => (
-              <a 
-                key={item} 
-                href="#" 
+              <Link
+                key={item}
+                to={`/${item.toLowerCase()}`}
                 className="text-gray-700 font-medium text-lg py-2 border-b border-gray-100"
               >
                 {item}
-              </a>
+              </Link>
             ))}
             <button className="bg-orange-500 text-white px-5 py-3 rounded-full font-medium mt-2">
               Get Started
